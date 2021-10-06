@@ -39,7 +39,8 @@ ul{
     min-height: 50vh; 
 
     overflow-y: auto;
-    margin: 1rem 0;
+    margin: 1rem;
+    padding-right: 1rem;
 
     font-family: 'Raleway', sans-serif;
 }
@@ -51,6 +52,7 @@ ul::-webkit-scrollbar {
 ul::-webkit-scrollbar-thumb {
     background: rgb(19, 204, 236);
     border-radius: 12px;
+    
 }
 
 li {
