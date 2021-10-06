@@ -27,19 +27,23 @@ body{
 header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    padding-bottom: 10px;
 }
 
-ul#taskList{
-    max-height: 60vh;
+ul{
+    max-height: 50vh; 
+    min-height: 50vh; 
+
     overflow-y: auto;
     margin: 1rem 0;
 }
 
-ul#taskList::-webkit-scrollbar {
+ul::-webkit-scrollbar {
     width: 8px;
 }
 
-ul#taskList::-webkit-scrollbar-thumb {
+ul::-webkit-scrollbar-thumb {
     background: rgb(19, 204, 236);
     border-radius: 12px;
 }
@@ -47,14 +51,26 @@ ul#taskList::-webkit-scrollbar-thumb {
 li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0.25rem 0.25rem 1rem 0px rgba(0, 0, 0, 0.116);
     border-radius: 50px;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
-li:hover {
+li:hover,
+li label:hover {
     cursor: pointer;
+}
+
+li label {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+li label:hover {
+    color: rgb(19, 204, 236);
+    transition: 0.1s
 }
 
 #inputField {
@@ -72,7 +88,7 @@ li:hover {
     width: 80%
 }
 
-button#sendTask{
+#inputField button{
     background: linear-gradient(to right, #1fa2ff, #12a5fa);
 
     border: none;
@@ -82,10 +98,18 @@ button#sendTask{
     font-size: 1rem;
     color: white;
     font-weight: bold;
+
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
-button#sendtask:hover {
+button#addTask:hover {
     cursor: pointer;
 }
 
