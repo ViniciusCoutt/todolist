@@ -1,7 +1,5 @@
 <h1 align="center"> To do list </h1>
 
-<h2 align="center"> Em construção 🚧 </h1>
-
 ### Tecnologias 
 
 Feito usando apenas **HTML**, **CSS** e **Javascript.** 
