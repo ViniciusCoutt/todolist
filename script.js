@@ -23,10 +23,11 @@ function getInput() {
 
 function showList() {
     const localStorageData = localStorage.getItem("New task")
-    localStorageData == null ? taskArr = [] : taskArr = JSON.parse(localStorageData)
+    localStorageData == null ? taskArr = [] : taskArr = JSON.parse(localStorageData);
 
     const remainingTasks = document.querySelector(".remainingTasks")
-    remainingTasks.textContent = "tarefas restantes: " + taskArr.length
+    remainingTasks.textContent = taskArr.length + " tarefas";
+
 
     let newLi = "";
     taskArr.forEach((task, index) => {
@@ -38,8 +39,10 @@ function showList() {
                 </span>
             </li>`
     })
+
     listBox.innerHTML = newLi
     taskInput.value = ""
+
 }
 
 function removeTask(index) {
