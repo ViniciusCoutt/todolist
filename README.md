@@ -6,7 +6,7 @@ Feito usando apenas **HTML**, **CSS** e **Javascript.**
 
 ### Página desktop
 
-<img src="/image/desktoplayout.jpg" alt="Desktop Layout">
+<img src="/image/desktoplayout1.jpg" alt="Desktop Layout">
 
 ### Página mobile
 
