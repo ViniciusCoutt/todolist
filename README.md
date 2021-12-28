@@ -13,5 +13,3 @@ Feito usando apenas **HTML**, **CSS** e **Javascript.**
 <p align="center">
 <img src="/image/mobilelayout.jpg" alt="Mobile Layout">
 </p>
-
-PS: Para roda-lo utilize a extensão Live Server
